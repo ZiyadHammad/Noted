@@ -52,11 +52,11 @@ _The **NOTED** MVP is to build out three tables, one for users, one for categori
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Front-end user interaction and state management through manipulation of a virtual DOM._ |
+|   React Router   | _Site navigation and routing for single page applications_ |
+|       Rails      | _Backend model-view-controller framework for Ruby_ |
+|     Axios        | _Promise-based HTTP client for the browser and node.js_ |
+
 
 <br>
 
@@ -65,10 +65,6 @@ _The **NOTED** MVP is to build out three tables, one for users, one for categori
 #### Wireframes
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![P4Draw](https://user-images.githubusercontent.com/86253039/130725809-135746c0-71ed-4b36-8d1c-687155386725.png)
-
-
 
 - Desktop Landing
 
@@ -79,25 +75,18 @@ _The **NOTED** MVP is to build out three tables, one for users, one for categori
 ![UserPro](https://user-images.githubusercontent.com/86253039/130728485-6a7506a5-ae8a-4637-befa-31c571051936.png)
 
 
-- Resource Index
+- To do and Event Page
+- ![toevent](https://user-images.githubusercontent.com/86253039/130812310-907b2487-b3d9-44f1-a378-988ad503bb19.png)
 
-![Dummy Link](url)
 
-- Resource Show
 
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
 > Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+> 
+![ComponentTree](https://user-images.githubusercontent.com/86253039/130815317-915bb16c-0fba-4869-9f94-abeadec2aff2.png)
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 #### Component Architecture
 
@@ -106,14 +95,52 @@ _The **NOTED** MVP is to build out three tables, one for users, one for categori
 ``` structure
 
 src
+|__ App.jsx
+|__ index.js
 |__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Layout/
+          |__ Layout.jsx
+          |__ Layout.css
+      |__ Nav/
+          |__ Nav.jsx
+          |__ Nav.css
+      |__ Footer/
+          |__ Footer.jsx
+          |__ Footer.css
+|__ screens/
+      |__ Home/
+          |__ Home.jsx
+          |__ Home.css
+      |__ UserPro/
+          |__ UserPro.jsx
+          |__ UserPro.css
+      |__ AllTodos/
+          |__ AllTodos.jsx
+          |__ Alltodos.css
+      |__ TodoDetail/
+          |__ TodoDetail.jsx
+          |__ TodoDetail.css
+      |__ AllEvents/
+          |__ AllEvents.jsx
+          |__ AllEvents.css\
+      |__ EventDetail/
+          |__ EventDetail.jsx
+          |__ EventDetail.css
+      |__ SignIn/
+          |__ SignIn.jsx
+          |__ SignIn.css
+      |__ SignUp/
+          |__ SignUp.jsx
+          |__ SignUp.css
 |__ services/
+      |__ apiConfig.js
+      |__ users.js
+      |__ articles.js
+      |__ categories.js
+|__ utilities/
+      |__ utilities.js
+
 
 ```
 
@@ -123,6 +150,12 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
+| Building Backend    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Boiler Plate for Frontend |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Building Configuration |          |     6 hrs      |     3 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
@@ -137,7 +170,8 @@ src
 
 > Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+
+![P4Draw](https://user-images.githubusercontent.com/86253039/130725809-135746c0-71ed-4b36-8d1c-687155386725.png)
 <br>
 
 ***
