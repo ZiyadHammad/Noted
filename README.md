@@ -152,13 +152,13 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Building Backend    |    L     |     3 hrs      |     2 hrs     |       |
 | Boiler Plate for Frontend |    H     |     3 hrs      |     1 hrs     |         |
-| Building Configuration |          |     6 hrs      |     3 hrs     |         |
+| Building Configuration |      H    |     6 hrs      |     3 hrs     |         |
 | Building Controllers   |    L     |     3 hrs      |     2 hrs     |      |
 | CRUD functionality |    H     |     3 hrs      |     1 hrs     |        |
-| Styling      |          |     6 hrs      |     3 hrs     |         |
+| Styling      |      H    |     6 hrs      |     3 hrs     |         |
 | Building Signin/Signout Forms    |    L     |     3 hrs      |     2 hrs     |       |
 | Build Todo Pages |    H     |     3 hrs      |     1 hrs     |       |
-| Build All Event Pages               |          |     6 hrs      |     3 hrs     |         |
+| Build All Event Pages     H          |          |     6 hrs      |     3 hrs     |         |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |        |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |          |
 | TOTAL               |          |     6 hrs      |     3 hrs     |          |
