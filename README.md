@@ -76,7 +76,8 @@ _The **NOTED** MVP is to build out three tables, one for users, one for categori
 
 - Desktop User Profile
 
-![Dummy Link](url)
+![UserPro](https://user-images.githubusercontent.com/86253039/130728485-6a7506a5-ae8a-4637-befa-31c571051936.png)
+
 
 - Resource Index
 
