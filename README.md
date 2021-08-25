@@ -66,14 +66,15 @@ _The **NOTED** MVP is to build out three tables, one for users, one for categori
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![FlowLand](https://user-images.githubusercontent.com/86253039/130718393-30f544bb-9512-49ea-8d65-5287f19cd691.png)
+![P4Draw](https://user-images.githubusercontent.com/86253039/130725809-135746c0-71ed-4b36-8d1c-687155386725.png)
+
 
 
 - Desktop Landing
 
-![Dummy Link](url)
+![FlowLand](https://user-images.githubusercontent.com/86253039/130718393-30f544bb-9512-49ea-8d65-5287f19cd691.png)
 
-- Desktop Hero
+- Desktop User Profile
 
 ![Dummy Link](url)
 
