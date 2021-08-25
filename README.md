@@ -23,7 +23,7 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**NOTED** is a beautiful intuitive To-Do List App where users will be able to create accounts and have full CRUD functionality with their to-do lists and categories._
 
 
 <br>
@@ -32,17 +32,17 @@ _**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum ri
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **NOTED** MVP is to build out three tables, one for users, one for categories and one for the to do's itself. Build out user sign in/sign up and sign out function, have full CRUD for the To-do's and also build out the categories and proper routes for each table. And also include styling and three media queries._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Complete backend in one day_
+- _Have full CRUD done in one day on front-end._
+- _Focus on styling and making site responsive_
+- _Add some cool animations._
+
 
 <br>
 
@@ -66,7 +66,7 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![https://whimsical.com/MDUmac39tzhHxfgXzog9ra](url)
 
 - Desktop Landing
 
