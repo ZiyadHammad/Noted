@@ -70,13 +70,17 @@ _The **NOTED** MVP is to build out three tables, one for users, one for categori
 
 ![FlowLand](https://user-images.githubusercontent.com/86253039/130718393-30f544bb-9512-49ea-8d65-5287f19cd691.png)
 
-- Desktop User Profile
+- Desktop User Profile / All To-do/Event Page
 
 ![UserPro](https://user-images.githubusercontent.com/86253039/130728485-6a7506a5-ae8a-4637-befa-31c571051936.png)
 
 
-- To do and Event Page
+- To do/Event Edit & Delete Page
 - ![toevent](https://user-images.githubusercontent.com/86253039/130812310-907b2487-b3d9-44f1-a378-988ad503bb19.png)
+
+- To do/Event Create Page
+- ![Create](https://user-images.githubusercontent.com/86253039/130826555-762f9ac2-6771-4c2d-85cb-6ea98f6b1be6.png)
+
 
 
 
@@ -174,7 +178,8 @@ src
 > Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
 
-![P4Draw](https://user-images.githubusercontent.com/86253039/130725809-135746c0-71ed-4b36-8d1c-687155386725.png)
+![ERD](https://user-images.githubusercontent.com/86253039/130828199-1ca9490c-9f82-46f4-8a33-7b1158ae3caa.png)
+
 <br>
 
 ***
