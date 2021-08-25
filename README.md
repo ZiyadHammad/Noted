@@ -150,15 +150,18 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Building Backend    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Boiler Plate for Frontend |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Building Configuration |          |     6 hrs      |     3 hrs     |     TBD     |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Building Backend    |    L     |     3 hrs      |     2 hrs     |       |
+| Boiler Plate for Frontend |    H     |     3 hrs      |     1 hrs     |         |
+| Building Configuration |          |     6 hrs      |     3 hrs     |         |
+| Building Controllers   |    L     |     3 hrs      |     2 hrs     |      |
+| CRUD functionality |    H     |     3 hrs      |     1 hrs     |        |
+| Styling      |          |     6 hrs      |     3 hrs     |         |
+| Building Signin/Signout Forms    |    L     |     3 hrs      |     2 hrs     |       |
+| Build Todo Pages |    H     |     3 hrs      |     1 hrs     |       |
+| Build All Event Pages               |          |     6 hrs      |     3 hrs     |         |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |        |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |          |
+| TOTAL               |          |     6 hrs      |     3 hrs     |          |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
