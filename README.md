@@ -23,7 +23,7 @@
 
 ## Overview
 
-_**NOTED** is a beautiful intuitive To-Do List App where users will be able to create accounts and have full CRUD functionality with their to-do lists and categories._
+_**NOTED** is a beautiful intuitive Planner App where users will be able to create accounts and have full CRUD functionality with their to-do lists and events._
 
 
 <br>
@@ -32,7 +32,7 @@ _**NOTED** is a beautiful intuitive To-Do List App where users will be able to c
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **NOTED** MVP is to build out three tables, one for users, one for categories and one for the to do's itself. Build out user sign in/sign up and sign out function, have full CRUD for the To-do's and also build out the categories and proper routes for each table. And also include styling and three media queries._
+_The **NOTED** MVP is to build out three tables, one for users, one for categories and one for the to do's itself. Build out user sign in/sign up and sign out function, have full CRUD for the To-do's and Events. And also include styling and three media queries._
 
 <br>
 
