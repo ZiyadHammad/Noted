@@ -7,7 +7,7 @@ export default function TodoEdit(props) {
     title: '',
     content: '',
   })
-  const {todos} = props
+  const {todos, handleUpdate} = props
   const { id } = useParams()
   
   useEffect(() => {
@@ -31,14 +31,17 @@ export default function TodoEdit(props) {
   
   return (
     <div className="todo-edit">
-      <form>
+      <form onSubmit={(e) => {
+        e.preventDefault()
+        handleUpdate(id, formData)
+      }}>
         <label>
           Title:
-          <input type="text" name="title" value={formDara.title} onChange={handleChange} />
+          <input type="text" name="title" value={formData.title} onChange={handleChange} />
         </label>
         <label>
           Content:
-          <input type="text" name="content" value={formDara.content} onChange={handleChange} />
+          <input type="text" name="content" value={formData.content} onChange={handleChange} />
         </label>
         <button>Submit Changes</button>
       </form>

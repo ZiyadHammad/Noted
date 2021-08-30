@@ -2,9 +2,9 @@ import './App.css';
 
 
 import { useState, useEffect } from 'react';
-import Layout from './Layout/Layout';
-import LandingPage from './screens/LandingPage/LandingPage';
+import Layout from './components/Layout/Layout';
 import SignUp from './screens/SignUp/SignUp'
+import MainContainer from './containers/MainContainer';
 import { Switch, Route, useHistory } from 'react-router-dom'
 import Login from './screens/Login/Login';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
@@ -12,7 +12,7 @@ import { loginUser, registerUser, removeToken, verifyUser } from './services/aut
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
-  // const history = useHistory()
+  const history = useHistory()
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -25,13 +25,13 @@ function App() {
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData)
     setCurrentUser(userData)
-    // history.push("/")
+    history.push("/")
   }
 
   const handleSignUp = async (registerData) => {
     const userData = await registerUser(registerData)
     setCurrentUser(userData)
-    // history.push("/")
+    history.push("/")
   }
   const handleLogout = async () => {
     setCurrentUser(null)
@@ -39,20 +39,24 @@ function App() {
     removeToken()
   }
 
+
+
   return (
     <div className="App">
-      <Layout currentUser={currentUser} handleLogout={handleLogout} />
+      <Layout currentUser={currentUser} handleLogout={handleLogout} >
       <Switch>
-        <Route exact path="/">
-          <LandingPage />
-        </Route>
         <Route path='/login'>
           <Login handleLogin={handleLogin} />
         </Route>
         <Route path='/sign-up'>
           <SignUp handleSignUp={handleSignUp} />
         </Route>
+        <Route to="/">
+          <MainContainer currentUser={currentUser} />
+          </Route>
+        
       </Switch>
+      </Layout>
 
     </div>
   );

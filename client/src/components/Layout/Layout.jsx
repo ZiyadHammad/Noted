@@ -28,7 +28,7 @@ export default function Layout(props) {
       <hr />
       {currentUser && (
         
-          <Link to="/myprofile">
+          <Link to="/profile">
             <a>My Profile</a>
           </Link>
           
