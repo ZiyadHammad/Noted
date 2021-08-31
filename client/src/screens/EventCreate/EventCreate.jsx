@@ -6,7 +6,7 @@ export default function TodoCreate(props) {
     content: ''
   });
   const { title, content } = formData;
-  const { handleCreate } = props;
+  const { handleCreateEvent } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,10 +20,10 @@ export default function TodoCreate(props) {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        handleCreate(formData);
+        handleCreateEvent(formData);
       }}
     >
-      <h3>Create Todo</h3>
+      <h3>Create Event</h3>
       <label>
         title:
         <input type='text' name='title' value={title} onChange={handleChange} />

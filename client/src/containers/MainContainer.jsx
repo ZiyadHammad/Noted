@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Switch, Route, useHistory} from 'react-router-dom'
-import {getAllTodos, postTodo, putTodo, deleteTodo} from '../services/todo'
+import { getAllTodos, postTodo, putTodo, deleteTodo } from '../services/todo'
+import {postEvent} from '../services/event'
 import { getAllEvents } from '../services/event'
 import TodoEdit from '../screens/TodoEdit/TodoEdit'
 import TodoCreate from '../screens/TodoCreate/TodoCreate'
@@ -9,6 +10,8 @@ import Todos from '../screens/Todos/Todos'
 import LandingPage from '../screens/LandingPage/LandingPage';
 import UserProfile from '../screens/UserProfile/UserProfile'
 import Events from '../screens/Events/Events'
+import EventCreate from '../screens/EventCreate/EventCreate'
+import EventDetail from '../screens/EventDetail/EventDetail'
 
 export default function MainContainer(props) {
   const [todos, setTodos] = useState([])
@@ -34,6 +37,12 @@ export default function MainContainer(props) {
     if (currentUser) fetchEvents()
   }, [currentUser])
 
+  const handleCreateEvent = async (formData) => {
+    const eventData = await postEvent(formData);
+    setEvents((prevState) => [...prevState, eventData]);
+    history.push('/events');
+  };
+
   const handleCreate = async (formData) => {
     const todoData = await postTodo(formData);
     setTodos((prevState) => [...prevState, todoData]);
@@ -47,7 +56,7 @@ export default function MainContainer(props) {
         return todo.id === Number(id) ? todoData : todo;
       })
     );
-    history.push('/foods');
+    history.push('/todos');
   };
 
   const handleDelete = async (id) => {
@@ -58,9 +67,7 @@ export default function MainContainer(props) {
   return (
     <div>
       <Switch>
-        <Route path="/events">
-          <Events events={events} />
-        </Route>
+       
         <Route path="/todos/:id/edit">
           <TodoEdit todos={todos} handleUpdate={handleUpdate} />
         </Route>
@@ -70,11 +77,20 @@ export default function MainContainer(props) {
         <Route path="/todos/:id">
           <TodoDetail todos={todos}/>
         </Route>
+        <Route path="/events/:id">
+          <EventDetail events={events} handleDelete={handleDelete} />
+        </Route>
+        <Route path="/events/new">
+          <EventCreate handleCreateEvent={handleCreateEvent} events={events}/>
+        </Route>
         <Route path="/todos">
           <Todos todos={todos} handleDelete={handleDelete}  />
         </Route>
         <Route path="/profile">
           <UserProfile />
+        </Route>
+        <Route path="/events">
+          <Events events={events} />
         </Route>
         <Route path="/">
           <LandingPage />

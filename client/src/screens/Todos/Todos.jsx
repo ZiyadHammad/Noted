@@ -14,8 +14,10 @@ export default function Todos(props) {
           
               <Link to={`/todos/${todo.id}/edit`}>
                 <button>Edit</button>
-              </Link>
+          </Link>
+          <Link to="/todos">
               <button onClick={() => handleDelete(todo.id)}>Delete</button>
+              </Link>
             </div>
         
       ))}

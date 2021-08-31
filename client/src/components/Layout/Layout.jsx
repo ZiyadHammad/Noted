@@ -1,20 +1,21 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import Footer from '../Footer/Footer'
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props
   
   return (
-    <div>
+    <div className="wrapper">
       <h1>Noted</h1>
       {
         currentUser ? (
-            <div>
+            <div className="navbar">
               <p>{currentUser.username}</p>
             <button onClick={handleLogout}>Logout</button>
             </div>
         ) : (
-            <div>
+            <div className="navbar">
               <Link to="/login">
                 <a>Login</a>
               </Link>
@@ -22,7 +23,8 @@ export default function Layout(props) {
               <Link to="/sign-up">
                 <a>Sign Up</a>
               </Link>
-              </div>
+            </div>
+            
         )
       }
       <hr />
@@ -34,6 +36,9 @@ export default function Layout(props) {
           
       )}
       {props.children}
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   )
 }

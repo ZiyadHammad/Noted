@@ -4,25 +4,26 @@ import { getOneTodo } from '../../services/todo';
 
 
 export default function TodoDetail(props) {
-  const [todoItem, setTodoItem] = useState(null);
+  const [todoItem, setTodoItem] = useState({});
   const { id } = useParams();
   
 
   useEffect(() => {
     const fetchTodoItem = async () => {
-      const foodData = await getOneTodo(id);
-      setTodoItem(foodData);
+      const todoData = await getOneTodo(id);
+      console.log("todo-data",todoData)
+      setTodoItem(todoData);
     };
     fetchTodoItem();
   }, [id]);
 
-  
-
+  console.log(todoItem)
   
 
   return (
     <div>
-      TodoDetail
+      {todoItem.title}
+      {todoItem.content}
     </div>
   );
 }
