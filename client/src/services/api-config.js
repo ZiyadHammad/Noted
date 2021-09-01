@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseURL = process.env.NODE_ENV === 'production'
-  ? 'deployed link goes here'
+  ? 'https://noted-apii.herokuapp.com/'
   : 'http://localhost:3000'
   
 const api = axios.create({

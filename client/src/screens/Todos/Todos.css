@@ -8,9 +8,52 @@
   height: 100vh;
   width: 100%;
 }
+.todo-wrapper h3{
+  font-size: 40px;
 
-.todo-content{
-  border-radius: 20%;
-  /* border: 2px solid grey; */
+}
 
+.todos-content p{
+  font-size: 30px;
+  
+
+
+}
+
+.create{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+
+}
+
+.edit{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+
+}
+
+.delete-button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:10px;
 }
