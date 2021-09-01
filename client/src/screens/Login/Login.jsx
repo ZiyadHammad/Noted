@@ -43,7 +43,7 @@ export default function Login(props) {
           
         <input type="checkbox"  checked="checked" name="remember"/>
         
-        <span class="psw"><a href="#"> Forgot password?</a></span>
+        <span class="psw"></span>
               <Link to="/sign-up">
                 <button>Forgot Password?</button>
                </Link>

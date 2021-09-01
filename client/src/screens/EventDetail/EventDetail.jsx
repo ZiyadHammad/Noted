@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneEvent } from '../../services/event';
 import { Link } from 'react-router-dom';
+import "./EventDetail.css" 
 
 
 export default function EventDetail(props) {
@@ -23,11 +24,11 @@ export default function EventDetail(props) {
   
 
   return (
-    <div>
+    <div className="event-wrapper">
       {eventItem.title}
       {eventItem.content}
       <Link to="/events">
-      <button onClick={() => handleDelete(events.id)}>Delete</button>
+      <button className="delete" onClick={() => handleDelete(events.id)}>Delete</button>
       </Link>
     </div>
   );

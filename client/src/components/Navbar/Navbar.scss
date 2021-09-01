@@ -4,7 +4,7 @@
   padding: 0;
   // margin-left: 10px;
   text-decoration: none;
-  background-color: #0082e6;
+  background-color: #272c2f;
   position: fixed;
   top: 0;
   height: 100px;
@@ -25,6 +25,37 @@
   left: 600px;
   
 }
+
+.links p{
+  color:white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.links a {
+  color:white;
+  font-size:23px;
+
+}
+ .signup{
+   margin-left:15px;
+
+ }
+
+ .log {
+   display: flex;
+  flex-direction: row;
+  
+ }
+ .log button {
+  margin-left: 30px;
+  height: 30px;
+  margin-top: 49px ;  
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: bold;
+ }
 
 #logo {
   color: white;

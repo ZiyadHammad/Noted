@@ -14,9 +14,9 @@ export default function Navbar(props) {
       <div className="links">
       {
         currentUser ? (
-            <div>
+            <div className="log">
               <p>{currentUser.username}</p>
-            <button onClick={handleLogout}>Logout</button>
+              <button className="logout" onClick={handleLogout}>Logout</button>
             </div>
         ) : (
             <div className="links">
@@ -25,7 +25,7 @@ export default function Navbar(props) {
               </Link>
               
               <Link to="/sign-up">
-                <a>Sign Up</a>
+                <a className="signup">Sign Up</a>
               </Link>
             </div>
             
