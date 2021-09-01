@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
+import './Todos.css'
 
 export default function Todos(props) {
   const { todos, handleDelete } = props;
 
   return (
-    <div>
+    <div className="todo-wrapper">
       <h3>Todos</h3>
+      <div className="todo-content">
       {todos.map((todo) => (
         <div key={todo.id}>
           <Link to={`/todos/${todo.id}`}>
@@ -21,9 +23,13 @@ export default function Todos(props) {
             </div>
         
       ))}
+      </div>
+      
       <Link to='/todos/new'>
+        
         <button>Create</button>
       </Link>
+
     </div>
   );
 }

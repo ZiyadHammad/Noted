@@ -1,44 +1,19 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
+import "./Layout.css"
 
 export default function Layout(props) {
   const { currentUser, handleLogout } = props
   
   return (
-    <div className="wrapper">
-      <h1>Noted</h1>
-      {
-        currentUser ? (
-            <div className="navbar">
-              <p>{currentUser.username}</p>
-            <button onClick={handleLogout}>Logout</button>
-            </div>
-        ) : (
-            <div className="navbar">
-              <Link to="/login">
-                <a>Login</a>
-              </Link>
-              
-              <Link to="/sign-up">
-                <a>Sign Up</a>
-              </Link>
-            </div>
-            
-        )
-      }
-      <hr />
-      {currentUser && (
-        
-          <Link to="/profile">
-            <a>My Profile</a>
-          </Link>
-          
-      )}
-      {props.children}
-      <div className="footer">
+    <div className="layout">
+      <Navbar currentUser={currentUser} handleLogout={handleLogout} />
+
+      <div className="content">{props.children}</div>
+     
         <Footer />
-      </div>
+     
     </div>
   )
 }

@@ -1,19 +1,40 @@
 .profile-main {
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  background-color:lightgreen;
+}
+
+.left-pro {
+display: flex;
+flex-direction: column;
+flex: .4;
+padding: 100px;
+}
+
+
+.b1{
+  margin-bottom:20px;
+
+}
+
+.b2{
+  margin-top:20px;
+
+}
+.right-pro {
   display: flex;
-
+  flex-direction: column;
+  align-content: center;
+  margin-left: 50px;
 }
 
-.left {
-  width: 30%;
-
+.card{
+  margin-top:100px;
+  text-decoration: none;
+  font-size: 40px;
 }
 
-.right{
-  width: 70%;
-  
-}
-
-.card {
-  border-radius: 14px;
-  border: 1px solid black
+a{
+  text-decoration: none;
 }

@@ -26,18 +26,30 @@ export default function Login(props) {
         handleLogin(formData)
       }}>
         <h3>Login</h3>
-        <label>Username
-          <input type='text' name='username' value={formData.username} onChange={handleChange}/>
-        </label>
-        <br />
-        <label>Password
-          <input type='password' name='password' value={formData.password} onChange={handleChange}/>
-        </label>
-        <br />
-        <Link to="/sign-up">
-        <button>Don't Have An Account?</button>
-        </Link>
-        <button>Submit</button>
+        <div className="formcontainer">
+          <hr/>
+          <div className="container">
+            
+            <label><strong>Username</strong></label>
+             <input type='text' name='username' value={formData.username} onChange={handleChange}/>
+       
+             <label><strong>Password</strong></label>
+            <input type='password' name='password' value={formData.password} onChange={handleChange} />
+          
+          </div>
+          <button>Login</button>
+
+          <div className="container">
+          
+        <input type="checkbox"  checked="checked" name="remember"/>
+        
+        <span class="psw"><a href="#"> Forgot password?</a></span>
+              <Link to="/sign-up">
+                <button>Forgot Password?</button>
+               </Link>
+          </div>
+          
+        </div>
       </form>
     </div>
   )

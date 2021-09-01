@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOneTodo } from '../../services/todo';
-
+import './TodoDetail.css'
 
 export default function TodoDetail(props) {
   const [todoItem, setTodoItem] = useState({});
@@ -21,9 +21,12 @@ export default function TodoDetail(props) {
   
 
   return (
-    <div>
-      {todoItem.title}
-      {todoItem.content}
+    <div className="todo-detail">
+
+      <div className="todo-content">
+      <h1>{todoItem.title}</h1>
+      <h3>{todoItem.content}</h3>
+        </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './TodoCreate.css'
 
 export default function TodoCreate(props) {
   const [formData, setFormData] = useState({
@@ -17,13 +18,14 @@ export default function TodoCreate(props) {
   };
 
   return (
-    <form
+    <div className="create-wrapper">
+    <form className="create-form"
       onSubmit={(e) => {
         e.preventDefault();
         handleCreate(formData);
       }}
     >
-      <h3>Create Todo</h3>
+      <h3 className="create-title">Create Todo</h3>
       <label>
         title:
         <input type='text' name='title' value={title} onChange={handleChange} />
@@ -32,7 +34,8 @@ export default function TodoCreate(props) {
         Content:
         <input type='text' name='content' value={content} onChange={handleChange} />
       </label>
-      <button>Submit</button>
-    </form>
+      <button className="b5">Submit</button>
+      </form>
+      </div>
   );
 }

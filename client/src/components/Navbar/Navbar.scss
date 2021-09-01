@@ -1,0 +1,31 @@
+.navbar {
+  display:flex;
+  margin: 0;
+  padding: 0;
+  // margin-left: 10px;
+  text-decoration: none;
+  background-color: #0082e6;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+
+
+  .links{
+    float: right;
+    margin: 20;
+    text-decoration: none;
+  }
+}
+
+
+#logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-weight: bold;
+  padding: 0 100px;
+  margin: 0;
+  text-decoration: none;
+}
+

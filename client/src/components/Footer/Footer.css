@@ -1,9 +1,12 @@
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -50px;
-}
-
-.footer{
+.footer-wrapper{
   height: 50px;
-  background-color: lightblue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0;
 }

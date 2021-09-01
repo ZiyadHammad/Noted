@@ -1,0 +1,24 @@
+.create-wrapper{
+  background-color: lightgreen;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.b5{
+  width: 60px;
+}
+
+.create-title{
+  margin-bottom: 20px;
+}

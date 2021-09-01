@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 export default function UserProfile() {
   return (
     <div className="profile-main">
-      <div className="left">
+      <div className="left-pro">
         <Link to="/todos">
-          My Todos
+         <button className="b1">My Todos</button>
         </Link>
         <Link to="/events">
-          My Events
+        <button className="b2">My Events</button>
         </Link>
       </div>
-      <div className="right">
+      <div className="right-pro">
         <Link to="/todos/new">
         <div className="card">
           <p>+ Create New Todo</p>
