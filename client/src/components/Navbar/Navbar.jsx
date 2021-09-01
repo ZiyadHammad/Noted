@@ -21,11 +21,11 @@ export default function Navbar(props) {
         ) : (
             <div className="links">
               <Link to="/login">
-                <a>Login</a>
+                <p href="">Login</p>
               </Link>
               
               <Link to="/sign-up">
-                <a className="signup">Sign Up</a>
+                <p className="signup">Sign Up</p>
               </Link>
             </div>
             
@@ -36,7 +36,7 @@ export default function Navbar(props) {
           
             <div className="links">
               <Link to="/profile">
-                 <a>My Profile</a>
+                 <p>My Profile</p>
               </Link>
             </div>
           
