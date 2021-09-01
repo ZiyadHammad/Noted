@@ -6,25 +6,16 @@
   width: 100%;
   margin-top: 100px;
 
-  .left {
-    flex: 0.4;
-
-
-    .img-container{
-      width: 700px;
-      height: 700px;
-
-      img{
-        height: 100%;
-        // background-color: crimson;
-        // border-radius: 30%;
-      }
-    }
+  
   }
 
   .right {
-    flex: 0.6;
+    display:flex;
+    justify-content: center;
     position: relative;
+    align-content: center;
+    align-items: center;
+    text-align: center;
 
     .wrapper{
       width: 100%;
@@ -63,4 +54,44 @@
     }
 
   }
-}
+
+
+  @media only screen and (max-width: 800px) {
+    .home {
+      background-color: darkgrey;
+      .right h2{
+        font-size: 50px;
+
+        
+      }
+      .right h3{
+        font-size: 50px;
+
+        
+      }
+
+      .right h1{
+        font-size: 65px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .home {
+      background-color: darkgrey;
+      .right h2{
+        display: none;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    .home {
+      background-color: darkgrey;
+
+      .right h3{
+        display:none;
+      }
+    }
+  }
